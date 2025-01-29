@@ -293,7 +293,7 @@ footer li {
 .search-container {
     position: relative;
     display: inline-block;
-    float: right;
+    float: none;
 }
 
 #search-bar {
