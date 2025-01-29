@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+   
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: #ddd;
+    padding: 50px 0;
+}
+
+#logo {
+    height: 200px;
+    width: auto;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+p {
+    background-color: black;
+    color: #ddd;
+    font-family: sans-serif;
+
+}
+
+h1 {
+    color: #ddd;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #ffe601;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 1000px;
+    color: #ddd;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+/* efeito no texto do menu */
+nav ul li a:hover {
+    color: #fff;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+
+button {
+    background-color: #696666; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Transições */
+}
+
+button:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumentar ligeiramente o tamanho */
+}
+
+button:active {
+    background-color: #000000; /* Cor de fundo ao clicar */
+    transform: scale(0.95); /* Reduzir ligeiramente o tamanho */
+}
+
+button, select {
+    background-color: #696666; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 10px; /* Espaçamento interno */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Transições */
+}
+
+button:hover, select:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumentar ligeiramente o tamanho */
+}
+
+button:active, select:active {
+    background-color: #000000; /* Cor de fundo ao clicar */
+    transform: scale(0.95); /* Reduzir ligeiramente o tamanho */
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/*responsividade para dispositivos movel*/
+@media (max-width: 1080px) {
+    .top-bar {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .product {
+        width: 100%;
+        margin: 5px;
+    }
+    .options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #search-bar {
+        width: 100%;
+    }
+}
