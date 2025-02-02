@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="/src/carrinho/cart.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img id="logo" src="/src/imagens/Logotipo.png" alt="Logotipo">
+        <nav>
+            <ul>
+                <li><a href="/src/index.html">Inicio</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Perfil</a></li>
+            </ul>
+          
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Carrinho de Compras</h1>
+        <ul id="cart-items"></ul>
+        <button onclick="finalizePurchase()">Finalizar Compra</button>
+        <button onclick="location.href='/src/index.html'">Continuar Comprando</button>
+        <button onclick="emptyCart()">Esvaziar Carrinho</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Minha Loja de Roupas</p>
+    </footer>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>
